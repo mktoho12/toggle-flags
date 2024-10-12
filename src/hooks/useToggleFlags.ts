@@ -11,7 +11,7 @@ export const useToggleFlags = <T extends readonly string[]>(names: T) => {
 
   // 初期状態のフラグをオブジェクトとして作成
   const initialFlags = Object.fromEntries(
-    names.map((name) => [name, false]),
+    names.map(name => [name, false]),
   ) as NamedFlags
 
   // フラグの状態を切り替える関数
